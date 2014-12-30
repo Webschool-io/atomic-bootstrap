@@ -1,0 +1,15 @@
+{
+  "name": "Atomic-Bootstrap",
+  "author": "Bu Kinoshita",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^1.8.2",
+    "gulp": "^3.8.10",
+    "gulp-cssmin": "^0.1.6",
+    "gulp-preprocess": "^1.2.0",
+    "gulp-sass": "~0.5.2",
+    "gulp-sourcemaps": "^1.3.0",
+    "require-dir": "^0.1.0"
+  }
+}

@@ -1,0 +1,43 @@
+.btn-success {
+  @extend %btn;
+  background-color: $bg-success;
+  border-color: $border-success;
+  
+  &:hover {
+    background-color: $bg-success-hover;
+    border-color: $border-success-hover;
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: $bg-primary;
+  border-color: $border-primary;
+  
+  &:hover {
+    background-color: $bg-primary-hover;
+    border-color: $border-primary-hover;
+  }
+}
+  
+.btn-danger {
+  @extend %btn;
+  background-color: $bg-danger;
+  border-color: $border-danger;
+  
+  &:hover {
+    background-color: $bg-danger-hover;
+    border-color: $border-danger-hover;
+  }
+}
+
+.btn-info {
+  @extend %btn;
+  background-color: $bg-info;
+  border-color: $border-info;
+  
+  &:hover {
+    background-color: $bg-info-hover;
+    border-color: $border-info-hover;
+  }
+}

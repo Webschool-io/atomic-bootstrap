@@ -1,0 +1,19 @@
+.label-primary {
+  @extend %label;
+  background-color: $bg-primary;
+}
+
+.label-success {
+  @extend %label;
+  background-color: $bg-success;
+}
+
+.label-info {
+  @extend %label;
+  background-color: $bg-info;
+}
+
+.label-danger {
+  @extend %label;
+  background-color: $bg-danger;
+}
