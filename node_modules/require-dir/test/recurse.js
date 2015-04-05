@@ -19,6 +19,12 @@ assert.deepEqual(requireDir('./recurse', {recurse: true}), {
     c: {
         '3': 3
     },
+    // note that node_modules was explicitly ignored
+});
+
+// finally, test that node_modules can still be required directly:
+assert.deepEqual(requireDir('./recurse/node_modules'), {
+    fake: 'fake',
 });
 
 console.log('Recurse tests passed.');

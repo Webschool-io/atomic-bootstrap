@@ -1,0 +1,2115 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('#{$path-to-fonts}/glyphicons-halflings-regular.eot');
+  src: url('#{$path-to-fonts}/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('#{$path-to-fonts}/glyphicons-halflings-regular.woff2') format('woff2'), url('#{$path-to-fonts}/glyphicons-halflings-regular.woff') format('woff'), url('#{$path-to-fonts}/glyphicons-halflings-regular.ttf') format('truetype'), url('#{$path-to-fonts}/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+%glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%glyphicon-asterisk {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\2a";
+  }
+}
+
+%glyphicon-plus {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\2b";
+  }
+}
+
+%glyphicon-euro,
+%glyphicon-eur {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\20ac";
+  }
+}
+
+%glyphicon-minus {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\2212";
+  }
+}
+
+%glyphicon-cloud {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\2601";
+  }
+}
+
+%glyphicon-envelope {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\2709";
+  }
+}
+
+%glyphicon-pencil {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\270f";
+  }
+}
+
+%glyphicon-glass {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e001";
+  }
+}
+
+%glyphicon-music {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e002";
+  }
+}
+
+%glyphicon-search {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e003";
+  }
+}
+
+%glyphicon-heart {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e005";
+  }
+}
+
+%glyphicon-star {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e006";
+  }
+}
+
+%glyphicon-star-empty {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e007";
+  }
+}
+
+%glyphicon-user {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e008";
+  }
+}
+
+%glyphicon-film {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e009";
+  }
+}
+
+%glyphicon-th-large {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e010";
+  }
+}
+
+%glyphicon-th {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e011";
+  }
+}
+
+%glyphicon-th-list {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e012";
+  }
+}
+
+%glyphicon-ok {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e013";
+  }
+}
+
+%glyphicon-remove {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e014";
+  }
+}
+
+%glyphicon-zoom-in {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e015";
+  }
+}
+
+%glyphicon-zoom-out {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e016";
+  }
+}
+
+%glyphicon-off {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e017";
+  }
+}
+
+%glyphicon-signal {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e018";
+  }
+}
+
+%glyphicon-cog {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e019";
+  }
+}
+
+%glyphicon-trash {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e020";
+  }
+}
+
+%glyphicon-home {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e021";
+  }
+}
+
+%glyphicon-file {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e022";
+  }
+}
+
+%glyphicon-time {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e023";
+  }
+}
+
+%glyphicon-road {
+  @extend %glyphicon;
+
+  &:before {
+    content: "\e024";
+  }
+}
+
+%glyphicon-download-alt {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e025";
+  }
+}
+
+%glyphicon-download {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e026";
+  }
+}
+
+%glyphicon-upload {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e027";
+  }
+}
+
+%glyphicon-inbox {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e028";
+  }
+}
+
+%glyphicon-play-circle {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e029";
+  }
+}
+
+%glyphicon-repeat {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e030";
+  }
+}
+
+%glyphicon-refresh {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e031";
+  }
+}
+
+%glyphicon-list-alt {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e032";
+  }
+}
+
+%glyphicon-lock {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e033";
+  }
+}
+
+%glyphicon-flag {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e034";
+  }
+}
+
+%glyphicon-headphones {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e035";
+  }
+}
+
+%glyphicon-volume-off {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e036";
+  }
+}
+
+%glyphicon-volume-down {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e037";
+  }
+}
+
+%glyphicon-volume-up {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e038";
+  }
+}
+
+%glyphicon-qrcode {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e039";
+  }
+}
+
+%glyphicon-barcode {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e040";
+  }
+}
+
+%glyphicon-tag {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e041";
+  }
+}
+
+%glyphicon-tags {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e042";
+  }
+}
+
+%glyphicon-book {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e043";
+  }
+}
+
+%glyphicon-bookmark {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e044";
+  }
+}
+
+%glyphicon-print {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e045";
+  }
+}
+
+%glyphicon-camera {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e046";
+  }
+}
+
+%glyphicon-font {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e047";
+  }
+}
+
+%glyphicon-bold {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e048";
+  }
+}
+
+%glyphicon-italic {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e049";
+  }
+}
+
+%glyphicon-text-height {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e050";
+  }
+}
+
+%glyphicon-text-width {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e051";
+  }
+}
+
+%glyphicon-align-left {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e052";
+  }
+}
+
+%glyphicon-align-center {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e053";
+  }
+}
+
+%glyphicon-align-right {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e054";
+  }
+}
+
+%glyphicon-align-justify {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e055";
+  }
+}
+
+%glyphicon-list {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e056";
+  }
+}
+
+%glyphicon-indent-left {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e057";
+  }
+}
+
+%glyphicon-indent-right {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e058";
+  }
+}
+
+%glyphicon-facetime-video {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e059";
+  }
+}
+
+%glyphicon-picture {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e060";
+  }
+}
+
+%glyphicon-map-marker {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e062";
+  }
+}
+
+%glyphicon-adjust {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e063";
+  }
+}
+
+%glyphicon-tint {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e064";
+  }
+}
+
+%glyphicon-edit {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e065";
+  }
+}
+
+%glyphicon-share {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e066";
+  }
+}
+
+%glyphicon-check {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e067";
+  }
+}
+
+%glyphicon-move {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e068";
+  }
+}
+
+%glyphicon-step-backward {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e069";
+  }
+}
+
+%glyphicon-fast-backward {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e070";
+  }
+}
+
+%glyphicon-backward {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e071";
+  }
+}
+
+%glyphicon-play {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e072";
+  }
+}
+
+%glyphicon-pause {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e073";
+  }
+}
+
+%glyphicon-stop {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e074";
+  }
+}
+
+%glyphicon-forward {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e075";
+  }
+}
+
+%glyphicon-fast-forward {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e076";
+  }
+}
+
+%glyphicon-step-forward {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e077";
+  }
+}
+
+%glyphicon-eject {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e078";
+  }
+}
+
+%glyphicon-chevron-left {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e079";
+  }
+}
+
+%glyphicon-chevron-right {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e080";
+  }
+}
+
+%glyphicon-plus-sign {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e081";
+  }
+}
+
+%glyphicon-minus-sign {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e082";
+  }
+}
+
+%glyphicon-remove-sign {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e083";
+  }
+}
+
+%glyphicon-ok-sign {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e084";
+  }
+}
+
+%glyphicon-question-sign {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e085";
+  }
+}
+
+%glyphicon-info-sign {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e086";
+  }
+}
+
+%glyphicon-screenshot {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e087";
+  }
+}
+
+%glyphicon-remove-circle {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e088";
+  }
+}
+
+%glyphicon-ok-circle {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e089";
+  }
+}
+
+%glyphicon-ban-circle {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e090";
+  }
+}
+
+%glyphicon-arrow-left {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e091";
+  }
+}
+
+%glyphicon-arrow-right {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e092";
+  }
+}
+
+%glyphicon-arrow-up {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e093";
+  }
+}
+
+%glyphicon-arrow-down {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e094";
+  }
+}
+
+%glyphicon-share-alt {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e095";
+  }
+}
+
+%glyphicon-resize-full {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e096";
+  }
+}
+
+%glyphicon-resize-small {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e097";
+  }
+}
+
+%glyphicon-exclamation-sign {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e101";
+  }
+}
+
+%glyphicon-gift {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e102";
+  }
+}
+
+%glyphicon-leaf {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e103";
+  }
+}
+
+%glyphicon-fire {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e104";
+  }
+}
+
+%glyphicon-eye-open {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e105";
+  }
+}
+
+%glyphicon-eye-close {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e106";
+  }
+}
+
+%glyphicon-warning-sign {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e107";
+  }
+}
+
+%glyphicon-plane {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e108";
+  }
+}
+
+%glyphicon-calendar {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e109";
+  }
+}
+
+%glyphicon-random {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e110";
+  }
+}
+
+%glyphicon-comment {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e111";
+  }
+}
+
+%glyphicon-magnet {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e112";
+  }
+}
+
+%glyphicon-chevron-up {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e113";
+  }
+}
+
+%glyphicon-chevron-down {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e114";
+  }
+}
+
+%glyphicon-retweet {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e115";
+  }
+}
+
+%glyphicon-shopping-cart {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e116";
+  }
+}
+
+%glyphicon-folder-close {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e117";
+  }
+}
+
+%glyphicon-folder-open {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e118";
+  }
+}
+
+%glyphicon-resize-vertical {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e119";
+  }
+}
+
+%glyphicon-resize-horizontal {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e120";
+  }
+}
+
+%glyphicon-hdd {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e121";
+  }
+}
+
+%glyphicon-bullhorn {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e122";
+  }
+}
+
+%glyphicon-bell {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e123";
+  }
+}
+
+%glyphicon-certificate {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e124";
+  }
+}
+
+%glyphicon-thumbs-up {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e125";
+  }
+}
+
+%glyphicon-thumbs-down {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e126";
+  }
+}
+
+%glyphicon-hand-right {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e127";
+  }
+}
+
+%glyphicon-hand-left {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e128";
+  }
+}
+
+%glyphicon-hand-up {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e129";
+  }
+}
+
+%glyphicon-hand-down {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e130";
+  }
+}
+
+%glyphicon-circle-arrow-right {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e131";
+  }
+}
+
+%glyphicon-circle-arrow-left {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e132";
+  }
+}
+
+%glyphicon-circle-arrow-up {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e133";
+  }
+}
+
+%glyphicon-circle-arrow-down {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e134";
+  }
+}
+
+%glyphicon-globe {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e135";
+  }
+}
+
+%glyphicon-wrench {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e136";
+  }
+}
+
+%glyphicon-tasks {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e137";
+  }
+}
+
+%glyphicon-filter {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e138";
+  }
+}
+
+%glyphicon-briefcase {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e139";
+  }
+}
+
+%glyphicon-fullscreen {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e140";
+  }
+}
+
+%glyphicon-dashboard {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e141";
+  }
+}
+
+%glyphicon-paperclip {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e142";
+  }
+}
+
+%glyphicon-heart-empty {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e143";
+  }
+}
+
+%glyphicon-link {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e144";
+  }
+}
+
+%glyphicon-phone {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e145";
+  }
+}
+
+%glyphicon-pushpin {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e146";
+  }
+}
+
+%glyphicon-usd {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e148";
+  }
+}
+
+%glyphicon-gbp {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e149";
+  }
+}
+
+%glyphicon-sort {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e150";
+  }
+}
+
+%glyphicon-sort-by-alphabet {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e151";
+  }
+}
+
+%glyphicon-sort-by-alphabet-alt {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e152";
+  }
+}
+
+%glyphicon-sort-by-order {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e153";
+  }
+}
+
+%glyphicon-sort-by-order-alt {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e154";
+  }
+}
+
+%glyphicon-sort-by-attributes {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e155";
+  }
+}
+
+%glyphicon-sort-by-attributes-alt {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e156";
+  }
+}
+
+%glyphicon-unchecked {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e157";
+  }
+}
+
+%glyphicon-expand {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e158";
+  }
+}
+
+%glyphicon-collapse-down {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e159";
+  }
+}
+
+%glyphicon-collapse-up {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e160";
+  }
+}
+
+%glyphicon-log-in {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e161";
+  }
+}
+
+%glyphicon-flash {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e162";
+  }
+}
+
+%glyphicon-log-out {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e163";
+  }
+}
+
+%glyphicon-new-window {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e164";
+  }
+}
+
+%glyphicon-record {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e165";
+  }
+}
+
+%glyphicon-save {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e166";
+  }
+}
+
+%glyphicon-open {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e167";
+  }
+}
+
+%glyphicon-saved {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e168";
+  }
+}
+
+%glyphicon-import {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e169";
+  }
+}
+
+%glyphicon-export {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e170";
+  }
+}
+
+%glyphicon-send {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e171";
+  }
+}
+
+%glyphicon-floppy-disk {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e172";
+  }
+}
+
+%glyphicon-floppy-saved {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e173";
+  }
+}
+
+%glyphicon-floppy-remove {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e174";
+  }
+}
+
+%glyphicon-floppy-save {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e175";
+  }
+}
+
+%glyphicon-floppy-open {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e176";
+  }
+}
+
+%glyphicon-credit-card {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e177";
+  }
+}
+
+%glyphicon-transfer {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e178";
+  }
+}
+
+%glyphicon-cutlery {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e179";
+  }
+}
+
+%glyphicon-header {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e180";
+  }
+}
+
+%glyphicon-compressed {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e181";
+  }
+}
+
+%glyphicon-earphone {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e182";
+  }
+}
+
+%glyphicon-phone-alt {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e183";
+  }
+}
+
+%glyphicon-tower {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e184";
+  }
+}
+
+%glyphicon-stats {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e185";
+  }
+}
+
+%glyphicon-sd-video {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e186";
+  }
+}
+
+%glyphicon-hd-video {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e187";
+  }
+}
+
+%glyphicon-subtitles {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e188";
+  }
+}
+
+%glyphicon-sound-stereo {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e189";
+  }
+}
+
+%glyphicon-sound-dolby {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e190";
+  }
+}
+
+%glyphicon-sound-5-1 {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e191";
+  }
+}
+
+%glyphicon-sound-6-1 {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e192";
+  }
+}
+
+%glyphicon-sound-7-1 {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e193";
+  }
+}
+
+%glyphicon-copyright-mark {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e194";
+  }
+}
+
+%glyphicon-registration-mark {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e195";
+  }
+}
+
+%glyphicon-cloud-download {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e197";
+  }
+}
+
+%glyphicon-cloud-upload {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e198";
+  }
+}
+
+%glyphicon-tree-conifer {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e199";
+  }
+}
+
+%glyphicon-tree-deciduous {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e200";
+  }
+}
+
+%glyphicon-cd {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e201";
+  }
+}
+
+%glyphicon-save-file {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e202";
+  }
+}
+
+%glyphicon-open-file {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e203";
+  }
+}
+
+%glyphicon-level-up {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e204";
+  }
+}
+
+%glyphicon-copy {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e205";
+  }
+}
+
+%glyphicon-paste {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e206";
+  }
+}
+
+%glyphicon-alert {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e209";
+  }
+}
+
+%glyphicon-equalizer {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e210";
+  }
+}
+
+%glyphicon-king {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e211";
+  }
+}
+
+%glyphicon-queen {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e212";
+  }
+}
+
+%glyphicon-pawn {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e213";
+  }
+}
+
+%glyphicon-bishop {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e214";
+  }
+}
+
+%glyphicon-knight {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e215";
+  }
+}
+
+%glyphicon-baby-formula {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e216";
+  }
+}
+
+%glyphicon-tent {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\26fa";
+  }
+}
+
+%glyphicon-blackboard {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e218";
+  }
+}
+
+%glyphicon-bed {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e219";
+  }
+}
+
+%glyphicon-apple {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\f8ff";
+  }
+}
+
+%glyphicon-erase {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e221";
+  }
+}
+
+%glyphicon-hourglass {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\231b";
+  }
+}
+
+%glyphicon-lamp {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e223";
+  }
+}
+
+%glyphicon-duplicate {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e224";
+  }
+}
+
+%glyphicon-piggy-bank {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e225";
+  }
+}
+
+%glyphicon-scissors {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e226";
+  }
+}
+
+%glyphicon-bitcoin {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e227";
+  }
+}
+
+%glyphicon-btc {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e227";
+  }
+}
+
+%glyphicon-xbt {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e227";
+  }
+}
+
+%glyphicon-yen {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\00a5";
+  }
+}
+
+%glyphicon-jpy {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\00a5";
+  }
+}
+
+%glyphicon-ruble {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\20bd";
+  }
+}
+
+%glyphicon-rub {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\20bd";
+  }
+}
+
+%glyphicon-scale {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e230";
+  }
+}
+
+%glyphicon-ice-lolly {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e231";
+  }
+}
+
+%glyphicon-ice-lolly-tasted {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e232";
+  }
+}
+
+%glyphicon-education {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e233";
+  }
+}
+
+%glyphicon-option-horizontal {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e234";
+  }
+}
+
+%glyphicon-option-vertical {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e235";
+  }
+}
+
+%glyphicon-menu-hamburger {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e236";
+  }
+}
+
+%glyphicon-modal-window {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e237";
+  }
+}
+
+%glyphicon-oil {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e238";
+  }
+}
+
+%glyphicon-grain {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e239";
+  }
+}
+
+%glyphicon-sunglasses {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e240";
+  }
+}
+
+%glyphicon-text-size {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e241";
+  }
+}
+
+%glyphicon-text-color {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e242";
+  }
+}
+
+%glyphicon-text-background {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e243";
+  }
+}
+
+%glyphicon-object-align-top {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e244";
+  }
+}
+
+%glyphicon-object-align-bottom {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e245";
+  }
+}
+
+%glyphicon-object-align-horizontal {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e246";
+  }
+}
+
+%glyphicon-object-align-left {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e247";
+  }
+}
+
+%glyphicon-object-align-vertical {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e248";
+  }
+}
+
+%glyphicon-object-align-right {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e249";
+  }
+}
+
+%glyphicon-triangle-right {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e250";
+  }
+}
+
+%glyphicon-triangle-left {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e251";
+  }
+}
+
+%glyphicon-triangle-bottom {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e252";
+  }
+}
+
+%glyphicon-triangle-top {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e253";
+  }
+}
+
+%glyphicon-console {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e254";
+  }
+}
+
+%glyphicon-superscript {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e255";
+  }
+}
+
+%glyphicon-subscript {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e256";
+  }
+}
+
+%glyphicon-menu-left {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e257";
+  }
+}
+
+%glyphicon-menu-right {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e258";
+  }
+}
+
+%glyphicon-menu-down {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e259";
+  }
+}
+
+%glyphicon-menu-up {
+  @extend %glyphicon;
+  
+  &:before {
+    content: "\e260";
+  }
+}

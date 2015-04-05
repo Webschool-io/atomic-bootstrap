@@ -69,6 +69,10 @@ module.exports = function requireDir(dir, opts) {
 
             if (FS.statSync(path).isDirectory()) {
                 if (opts.recurse) {
+                    if (base === 'node_modules') {
+                        continue;
+                    }
+
                     map[base] = requireDir(path, opts);
 
                     // if duplicates are wanted, key off the full name too:
@@ -116,5 +120,22 @@ module.exports = function requireDir(dir, opts) {
         }
     }
 
+    if (opts.camelcase) {
+        for (var base in map) {
+            // protect against enumerable object prototype extensions:
+            if (!map.hasOwnProperty(base)) {
+                continue;
+            }
+
+            map[toCamelCase(base)] = map[base];
+        }
+    }
+
     return map;
 };
+
+function toCamelCase(str) {
+    return str.replace(/[_-][a-z]/ig, function (s) {
+        return s.substring(1).toUpperCase();
+    });
+}
