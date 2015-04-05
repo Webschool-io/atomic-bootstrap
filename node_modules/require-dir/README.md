@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/aseemk/requireDir.svg?branch=master)](https://travis-ci.org/aseemk/requireDir)
+[![npm version](https://badge.fury.io/js/require-dir.svg)](http://badge.fury.io/js/require-dir)
+
 # requireDir()
 
 Node helper to `require()` directories. The directory's files are examined,
@@ -24,7 +27,8 @@ dir
 }
 ```
 
-And if CoffeeScript was registered, `c.coffee` will also be returned.
+And if CoffeeScript has been registered via `require('coffee-script/register')`,
+`c.coffee` will also be returned.
 
 ## Installation
 
@@ -53,7 +57,12 @@ var dir = requireDir('./path/to/dir', {recurse: true});
 ## Options
 
 `recurse`: Whether to recursively `require()` subdirectories too.
+(`node_modules` within subdirectories will be ignored.)
 Default is false.
+
+`camelcase`: Automatically add camelcase aliases for files with dash- and
+underscore-separated names. E.g. `foo-bar.js` will be exposed under both the
+original `'foo-bar'` name as well as a `'fooBar'` alias. Default is false.
 
 `duplicates`: By default, if multiple files share the same basename, only the
 highest priority one is `require()`'d and returned. (Priority is determined by
@@ -105,4 +114,4 @@ this behavior should be customizable. This is hopefully an edge case.
 
 ## License
 
-MIT. &copy; 2012 Aseem Kishore.
+MIT. &copy; 2012-2015 Aseem Kishore.
